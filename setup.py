@@ -14,7 +14,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='GolfGTI',
-    version='1.0.4',
+    version='1.0.5',
     description='A simple script that shows a Golf GTI when you accidentally type gti instead of git.',
     long_description=long_description,
     long_description_content_type='text/markdown',

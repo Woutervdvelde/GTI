@@ -1,23 +1,21 @@
-#!/usr/bin/env python3
 from tkinter import *
 
-def main():
-    show_gti()
 
 def show_gti():
-    #Create the window
+    # Create the window
     root = Tk()
     root.config(bg="#454545")
     root.overrideredirect(True)
     root.wm_attributes("-topmost", True)
     root.wm_attributes("-transparentcolor", "white")
 
-    #Load the image
+    # Load the image
     photo = PhotoImage(file="gti/gti.png")
     width, height = photo.width(), photo.height()
 
-    #Place image on canvas for transparency
-    canvas = Canvas(root, bg="white", width=width, height=height, highlightthickness=0)
+    # Place image on canvas for transparency
+    canvas = Canvas(root, bg="white", width=width,
+                    height=height, highlightthickness=0)
     canvas.pack()
     canvas.create_image(0, 0, image=photo, anchor=NW)
 
@@ -26,7 +24,7 @@ def show_gti():
     x = 0 - width
     y = screen_height - height
 
-    #Move window from left to right
+    # Move window from left to right
     shouldRun = True
     try:
         while shouldRun:
@@ -39,5 +37,6 @@ def show_gti():
         pass
     root.destroy()
 
+
 if __name__ == "__main__":
-    main()
+    show_gti()
