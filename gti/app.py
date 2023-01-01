@@ -13,7 +13,7 @@ def show_gti():
     root.wm_attributes("-transparentcolor", "white")
 
     #Load the image
-    photo = PhotoImage(file="gti.png")
+    photo = PhotoImage(file="gti/gti.png")
     width, height = photo.width(), photo.height()
 
     #Place image on canvas for transparency

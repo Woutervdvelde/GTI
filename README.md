@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./gti.png"/>
+    <img src="./gti/gti.png"/>
 </div>
 <div align="center">
 
