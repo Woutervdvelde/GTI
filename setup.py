@@ -9,9 +9,10 @@
 from setuptools import setup
 
 setup(
-    name='gti',
-    version='1.0.0',
+    name='GolfGTI',
+    version='1.0.1',
     description='A simple script that shows a Golf GTI when you accidentally type gti instead of git.',
+    readme = 'README.md',
     author='Wouter van der Velde',
     author_email='woutervandervelde2000@hotmail.com',
     url='https://github.com/WoutervdVelde',
