@@ -1,6 +1,8 @@
+import os
+import click
 from tkinter import *
 
-
+@click.command()
 def show_gti():
     # Create the window
     root = Tk()
@@ -8,9 +10,10 @@ def show_gti():
     root.overrideredirect(True)
     root.wm_attributes("-topmost", True)
     root.wm_attributes("-transparentcolor", "white")
+    path = os.path.dirname(os.path.realpath(__file__))
 
     # Load the image
-    photo = PhotoImage(file="gti/gti.png")
+    photo = PhotoImage(file= path + "/gti.png")
     width, height = photo.width(), photo.height()
 
     # Place image on canvas for transparency
@@ -37,6 +40,5 @@ def show_gti():
         pass
     root.destroy()
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     show_gti()

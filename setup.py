@@ -14,7 +14,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='GolfGTI',
-    version='1.0.5',
+    version='1.1.0',
     description='A simple script that shows a Golf GTI when you accidentally type gti instead of git.',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -23,8 +23,10 @@ setup(
     url='https://github.com/WoutervdVelde',
     license='MIT',
     python_requires='>=3.1',
+    requires=['click', 'tkinter'],
+    packages=['gti'],
     entry_points = {
-        'console_scripts': ['gti=gti.app:main'],
+        'console_scripts': ['gti=gti.app:show_gti'],
     },
     include_package_data=True,
 )
