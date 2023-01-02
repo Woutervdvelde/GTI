@@ -8,6 +8,7 @@ A simple script that shows a Golf GTI when you accidentally type gti instead of 
 
 [![PyPI - License](https://img.shields.io/pypi/l/GolfGTI)](https://pypi.org/project/GolfGTI/ "View on pypi")
 [![PyPI](https://img.shields.io/pypi/v/GolfGTI)](https://pypi.org/project/GolfGTI/ "View on pypi")
+[![Downloads](https://static.pepy.tech/badge/golfgti)](https://pepy.tech/project/golfgti)
 </div>
 
 Tired of seeing the boring  
