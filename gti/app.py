@@ -3,6 +3,7 @@ import click
 from tkinter import *
 
 @click.command()
+@click.argument('args', nargs=-1)
 def show_gti():
     # Create the window
     root = Tk()

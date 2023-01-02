@@ -23,7 +23,7 @@ setup(
     url='https://github.com/WoutervdVelde',
     license='MIT',
     python_requires='>=3.1',
-    requires=['click', 'tkinter'],
+    install_requires=['click'],
     packages=['gti'],
     entry_points = {
         'console_scripts': ['gti=gti.app:show_gti'],
